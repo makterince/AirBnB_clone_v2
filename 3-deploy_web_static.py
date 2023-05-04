@@ -5,8 +5,9 @@ from datetime import datetime
 from os.path import isfile
 
 
-env.hosts = ["54.165.197.124", "54.234.35.46"]
+env.hosts = ['54.165.197.124', '54.234.35.46']
 env.user = "ubuntu"
+env.key_filename = '~/.ssh/id_rsa'
 
 @runs_once
 def do_pack():
