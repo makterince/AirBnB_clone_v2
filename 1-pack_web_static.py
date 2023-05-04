@@ -4,7 +4,7 @@ from fabric.api import local, env
 from datetime import datetime
 
 env.hosts = ['54.165.197.124']
-env.user = 'makterince'
+env.user = 'ubuntu'
 env.key_filename = '/ssh/id_rsa.pub'
 
 def do_pack():
