@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-
+""" script starts flask app """
 from flask import Flask, render_template
 from models import storage
 
