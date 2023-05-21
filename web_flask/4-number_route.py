@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """ This script starts a flask web application """
-from flask import Flask, url_for, redirect
+from flask import Flask
 
 
 app = Flask(__name__)
@@ -35,10 +35,11 @@ def python_text(text="is_cool"):
     return "Python {}".format(text.replace("_", " "))
 
 
-@app.route('/number/<int:n>', strict_slashes=False)
+@app.route("/number/<int:n>", strict_slashes=False)
 def number(n):
-    """ number route config"""
-     return "{} is a number".format(n)
+    """ number route configuration """
+
+    return "{} is a number".format(n)
 
 
 if __name__ == "__main__":
