@@ -27,9 +27,9 @@ def c_text(text):
     return "C {}".format(text.replace("_", " "))
 
 
-@app.route('/python/', defaults={'text': 'is cool'}, strict_slashes=False)
+@app.route('/python/', strict_slashes=False)
 @app.route('/python/<text>', strict_slashes=False)
-def python(text):
+def python(text='is_cool'):
     """ Replace underscores (_) with spaces """
     formatted_text = text.replace('_', ' ')
     return f'Python {formatted_text}'
